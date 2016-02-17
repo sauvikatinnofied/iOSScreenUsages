@@ -7,8 +7,7 @@
 //
 
 import UIKit
-import Fabric
-import Crashlytics
+
 
 
 @UIApplicationMain
@@ -19,17 +18,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
-        Fabric.with([Crashlytics.self])
-        
-//        DarwinNotificationsManager.sharedInstance().registerForNotificationName("com.apple.springboard.lockstate") { () -> Void in
-//            
-//        }
-        
-        DarwinNotificationsManager.sharedInstance().registerforDeviceLockNotif()
-        
-        
-        
-        
+
+        DarwinNotificationsManager.sharedInstance().registerforDeviceLockNotif()        
         
         return true
     }

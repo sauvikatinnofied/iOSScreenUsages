@@ -14,8 +14,6 @@
 		45A03CEC1C72F1C9003FAB9C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45A03CEA1C72F1C9003FAB9C /* LaunchScreen.storyboard */; };
 		45A03CF71C72F1CA003FAB9C /* FabricExplorationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A03CF61C72F1CA003FAB9C /* FabricExplorationTests.swift */; };
 		45A03D021C72F1CA003FAB9C /* FabricExplorationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A03D011C72F1CA003FAB9C /* FabricExplorationUITests.swift */; };
-		45A03D131C72F88E003FAB9C /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45A03D111C72F88E003FAB9C /* Fabric.framework */; };
-		45A03D141C72F88E003FAB9C /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45A03D121C72F88E003FAB9C /* Crashlytics.framework */; };
 		45A03D181C734CB8003FAB9C /* DarwinNotificationsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A03D171C734CB8003FAB9C /* DarwinNotificationsManager.m */; };
 /* End PBXBuildFile section */
 
@@ -50,8 +48,6 @@
 		45A03CFD1C72F1CA003FAB9C /* ScreenUsages.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScreenUsages.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		45A03D011C72F1CA003FAB9C /* FabricExplorationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FabricExplorationUITests.swift; sourceTree = "<group>"; };
 		45A03D031C72F1CA003FAB9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		45A03D111C72F88E003FAB9C /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
-		45A03D121C72F88E003FAB9C /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 		45A03D151C734CB8003FAB9C /* FabricExploration-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FabricExploration-Bridging-Header.h"; sourceTree = "<group>"; };
 		45A03D161C734CB8003FAB9C /* DarwinNotificationsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DarwinNotificationsManager.h; sourceTree = "<group>"; };
 		45A03D171C734CB8003FAB9C /* DarwinNotificationsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DarwinNotificationsManager.m; sourceTree = "<group>"; };
@@ -62,8 +58,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				45A03D141C72F88E003FAB9C /* Crashlytics.framework in Frameworks */,
-				45A03D131C72F88E003FAB9C /* Fabric.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,8 +81,6 @@
 		45A03CD51C72F1C8003FAB9C = {
 			isa = PBXGroup;
 			children = (
-				45A03D111C72F88E003FAB9C /* Fabric.framework */,
-				45A03D121C72F88E003FAB9C /* Crashlytics.framework */,
 				45A03CE01C72F1C8003FAB9C /* FabricExploration */,
 				45A03CF51C72F1CA003FAB9C /* FabricExplorationTests */,
 				45A03D001C72F1CA003FAB9C /* FabricExplorationUITests */,
@@ -150,7 +142,6 @@
 				45A03CDA1C72F1C8003FAB9C /* Sources */,
 				45A03CDB1C72F1C8003FAB9C /* Frameworks */,
 				45A03CDC1C72F1C8003FAB9C /* Resources */,
-				45A03D101C72F6C1003FAB9C /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -271,22 +262,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		45A03D101C72F6C1003FAB9C /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "./Fabric.framework/run 0cd5c80a09ac7f6b0235168dab0796db0a56b353 843ccee34be6e34195a6aeae80fa3f5e1c8d691dd37a3c5e87c1ddfb4a02f14b";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		45A03CDA1C72F1C8003FAB9C /* Sources */ = {
