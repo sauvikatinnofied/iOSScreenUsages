@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4562EB9F1C74715A005F9DCB /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4562EB9E1C74715A005F9DCB /* NotificationCenter.framework */; };
+		4562EBA21C74715A005F9DCB /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4562EBA11C74715A005F9DCB /* TodayViewController.swift */; };
+		4562EBA51C74715A005F9DCB /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4562EBA31C74715A005F9DCB /* MainInterface.storyboard */; };
+		4562EBAA1C74715A005F9DCB /* ScreenUsageWD.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 4562EB9C1C74715A005F9DCB /* ScreenUsageWD.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		4589AFC01C803D6800C40259 /* AcceleratometerMgr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4589AFBF1C803D6800C40259 /* AcceleratometerMgr.swift */; };
+		4589AFC21C80416C00C40259 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4589AFC11C80416C00C40259 /* LocationManager.swift */; };
 		45A03CE21C72F1C8003FAB9C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A03CE11C72F1C8003FAB9C /* AppDelegate.swift */; };
 		45A03CE41C72F1C8003FAB9C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A03CE31C72F1C8003FAB9C /* ViewController.swift */; };
 		45A03CE71C72F1C8003FAB9C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45A03CE51C72F1C8003FAB9C /* Main.storyboard */; };
@@ -18,6 +24,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		4562EBA71C74715A005F9DCB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 45A03CD61C72F1C8003FAB9C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4562EB9B1C74715A005F9DCB;
+			remoteInfo = ScreenUsageWD;
+		};
 		45A03CF31C72F1CA003FAB9C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 45A03CD61C72F1C8003FAB9C /* Project object */;
@@ -34,7 +47,28 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		4562EBA91C74715A005F9DCB /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				4562EBAA1C74715A005F9DCB /* ScreenUsageWD.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		4562EB9C1C74715A005F9DCB /* ScreenUsageWD.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ScreenUsageWD.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		4562EB9E1C74715A005F9DCB /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		4562EBA11C74715A005F9DCB /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		4562EBA41C74715A005F9DCB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		4562EBA61C74715A005F9DCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4589AFBF1C803D6800C40259 /* AcceleratometerMgr.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AcceleratometerMgr.swift; sourceTree = "<group>"; };
+		4589AFC11C80416C00C40259 /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		45A03CDE1C72F1C8003FAB9C /* ScreenUsages.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScreenUsages.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45A03CE11C72F1C8003FAB9C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		45A03CE31C72F1C8003FAB9C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +88,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		4562EB991C74715A005F9DCB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4562EB9F1C74715A005F9DCB /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		45A03CDB1C72F1C8003FAB9C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -78,12 +120,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4562EB9D1C74715A005F9DCB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4562EB9E1C74715A005F9DCB /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4562EBA01C74715A005F9DCB /* ScreenUsageWD */ = {
+			isa = PBXGroup;
+			children = (
+				4562EBA11C74715A005F9DCB /* TodayViewController.swift */,
+				4562EBA31C74715A005F9DCB /* MainInterface.storyboard */,
+				4562EBA61C74715A005F9DCB /* Info.plist */,
+			);
+			path = ScreenUsageWD;
+			sourceTree = "<group>";
+		};
 		45A03CD51C72F1C8003FAB9C = {
 			isa = PBXGroup;
 			children = (
 				45A03CE01C72F1C8003FAB9C /* FabricExploration */,
 				45A03CF51C72F1CA003FAB9C /* FabricExplorationTests */,
 				45A03D001C72F1CA003FAB9C /* FabricExplorationUITests */,
+				4562EBA01C74715A005F9DCB /* ScreenUsageWD */,
+				4562EB9D1C74715A005F9DCB /* Frameworks */,
 				45A03CDF1C72F1C8003FAB9C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -94,6 +156,7 @@
 				45A03CDE1C72F1C8003FAB9C /* ScreenUsages.app */,
 				45A03CF21C72F1CA003FAB9C /* ScreenUsages.xctest */,
 				45A03CFD1C72F1CA003FAB9C /* ScreenUsages.xctest */,
+				4562EB9C1C74715A005F9DCB /* ScreenUsageWD.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -101,6 +164,7 @@
 		45A03CE01C72F1C8003FAB9C /* FabricExploration */ = {
 			isa = PBXGroup;
 			children = (
+				4589AFC11C80416C00C40259 /* LocationManager.swift */,
 				45A03CE11C72F1C8003FAB9C /* AppDelegate.swift */,
 				45A03CE31C72F1C8003FAB9C /* ViewController.swift */,
 				45A03CE51C72F1C8003FAB9C /* Main.storyboard */,
@@ -110,6 +174,7 @@
 				45A03D161C734CB8003FAB9C /* DarwinNotificationsManager.h */,
 				45A03D171C734CB8003FAB9C /* DarwinNotificationsManager.m */,
 				45A03D151C734CB8003FAB9C /* FabricExploration-Bridging-Header.h */,
+				4589AFBF1C803D6800C40259 /* AcceleratometerMgr.swift */,
 			);
 			path = FabricExploration;
 			sourceTree = "<group>";
@@ -135,6 +200,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		4562EB9B1C74715A005F9DCB /* ScreenUsageWD */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4562EBAD1C74715A005F9DCB /* Build configuration list for PBXNativeTarget "ScreenUsageWD" */;
+			buildPhases = (
+				4562EB981C74715A005F9DCB /* Sources */,
+				4562EB991C74715A005F9DCB /* Frameworks */,
+				4562EB9A1C74715A005F9DCB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ScreenUsageWD;
+			productName = ScreenUsageWD;
+			productReference = 4562EB9C1C74715A005F9DCB /* ScreenUsageWD.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		45A03CDD1C72F1C8003FAB9C /* ScreenUsages */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 45A03D061C72F1CA003FAB9C /* Build configuration list for PBXNativeTarget "ScreenUsages" */;
@@ -142,10 +224,12 @@
 				45A03CDA1C72F1C8003FAB9C /* Sources */,
 				45A03CDB1C72F1C8003FAB9C /* Frameworks */,
 				45A03CDC1C72F1C8003FAB9C /* Resources */,
+				4562EBA91C74715A005F9DCB /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				4562EBA81C74715A005F9DCB /* PBXTargetDependency */,
 			);
 			name = ScreenUsages;
 			productName = FabricExploration;
@@ -198,6 +282,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = Innofied;
 				TargetAttributes = {
+					4562EB9B1C74715A005F9DCB = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
 					45A03CDD1C72F1C8003FAB9C = {
 						CreatedOnToolsVersion = 7.2.1;
 						SystemCapabilities = {
@@ -232,11 +319,20 @@
 				45A03CDD1C72F1C8003FAB9C /* ScreenUsages */,
 				45A03CF11C72F1CA003FAB9C /* ScreenUsagesTests */,
 				45A03CFC1C72F1CA003FAB9C /* ScreenUsagesUITests */,
+				4562EB9B1C74715A005F9DCB /* ScreenUsageWD */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		4562EB9A1C74715A005F9DCB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4562EBA51C74715A005F9DCB /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		45A03CDC1C72F1C8003FAB9C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -264,11 +360,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		4562EB981C74715A005F9DCB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4562EBA21C74715A005F9DCB /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		45A03CDA1C72F1C8003FAB9C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				45A03CE41C72F1C8003FAB9C /* ViewController.swift in Sources */,
+				4589AFC01C803D6800C40259 /* AcceleratometerMgr.swift in Sources */,
+				4589AFC21C80416C00C40259 /* LocationManager.swift in Sources */,
 				45A03CE21C72F1C8003FAB9C /* AppDelegate.swift in Sources */,
 				45A03D181C734CB8003FAB9C /* DarwinNotificationsManager.m in Sources */,
 			);
@@ -293,6 +399,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		4562EBA81C74715A005F9DCB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4562EB9B1C74715A005F9DCB /* ScreenUsageWD */;
+			targetProxy = 4562EBA71C74715A005F9DCB /* PBXContainerItemProxy */;
+		};
 		45A03CF41C72F1CA003FAB9C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 45A03CDD1C72F1C8003FAB9C /* ScreenUsages */;
@@ -306,6 +417,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		4562EBA31C74715A005F9DCB /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4562EBA41C74715A005F9DCB /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		45A03CE51C72F1C8003FAB9C /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -325,6 +444,28 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		4562EBAB1C74715A005F9DCB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ScreenUsageWD/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.innofied.fabricexploration.FabricExploration.ScreenUsageWD;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		4562EBAC1C74715A005F9DCB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ScreenUsageWD/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.innofied.fabricexploration.FabricExploration.ScreenUsageWD;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		45A03D041C72F1CA003FAB9C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -413,6 +554,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -431,6 +573,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -494,6 +637,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		4562EBAD1C74715A005F9DCB /* Build configuration list for PBXNativeTarget "ScreenUsageWD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4562EBAB1C74715A005F9DCB /* Debug */,
+				4562EBAC1C74715A005F9DCB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		45A03CD91C72F1C8003FAB9C /* Build configuration list for PBXProject "ScreenUsages" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

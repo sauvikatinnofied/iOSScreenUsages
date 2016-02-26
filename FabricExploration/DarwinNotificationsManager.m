@@ -8,15 +8,22 @@
 
 #import "DarwinNotificationsManager.h"
 
+#define NotifName_LockComplete @"com.apple.springboard.lockcomplete"
+#define NotifName_LockState    @"com.apple.springboard.lockstate"
+
+
 @implementation DarwinNotificationsManager {
     NSMutableDictionary * handlers;
+    
 }
+static BOOL isDeviceLocked;
 
 + (instancetype)sharedInstance {
     static id instance = NULL;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         instance = [[self alloc] init];
+        
     });
     return instance;
 }
@@ -24,6 +31,7 @@
 - (instancetype)init {
     self = [super init];
     if (self) {
+        isDeviceLocked = NO;
         handlers = [NSMutableDictionary dictionary];
     }
     return self;
@@ -49,26 +57,29 @@ void defaultNotificationCallback (CFNotificationCenterRef center,
                                   void *observer,
                                   CFStringRef name,
                                   const void *object,
-                                  CFDictionaryRef userInfo)
-{
-    NSLog(@"name: %@", name);
-    NSLog(@"userinfo: %@", userInfo);
+                                  CFDictionaryRef userInfo){
     
     NSString *identifier = (__bridge NSString *)name;
     [[DarwinNotificationsManager sharedInstance] notificationCallbackReceivedWithName:identifier];
 }
 
-#define NotifName_LockComplete @"com.apple.springboard.lockcomplete"
-#define NotifName_LockState    @"com.apple.springboard.lockstate"
 
 
 //call back
 static void lockStatusChanged(CFNotificationCenterRef center, void *observer, CFStringRef name_cf, const void *object, CFDictionaryRef userInfo){
     NSString *name = (__bridge NSString*)name_cf;
+    
     if ([name isEqualToString:NotifName_LockComplete]) {
-        NSLog(@"DEVICE LOCKED");
+        
+        
     } else if ([name isEqualToString:NotifName_LockState]) {
-        NSLog(@"LOCK STATUS CHANGED");
+        ;
+        isDeviceLocked = !isDeviceLocked;
+        if (isDeviceLocked) {
+            NSLog(@"DEVICE LOCKED");
+        } else {
+            NSLog(@"DEVICE UNLOCKED");
+        }
     }
 }
 
